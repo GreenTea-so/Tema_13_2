@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <linK rel="stylesheet" href = "css/main.css">
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.27.2.min.js"></script>
+
+    <script src="js/messend.js"></script>
+    
+</head>
+<body>
+    <div class="main_image">
+        <img class="main_image_img" src="https://picsum.photos/1200/900">
+    </div>
+
+    <div class="chat">
+        <div class="chat_message" id="chat_message">
+           
+        </div>
+        <input placeholder="Пишите в этом поле" class="chat_input" id="chat_input" onkeyup="sendinput(event)">
+        <button class="chat_button" onclick="sendbutton()">Отправить</button>
+    </div>
+
+</body>
+</html>
